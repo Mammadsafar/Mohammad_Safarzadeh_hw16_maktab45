@@ -14,7 +14,7 @@ router.get('/companyPages', function (req, res) {
             err: err.msg
         });
         // res.json(companies);
-        res.render('company', {
+        res.render('companiesInfo', {
             companies
         });
     });
