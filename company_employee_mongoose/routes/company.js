@@ -118,6 +118,9 @@ router.post('/changeCity', (req, res) => {
 
 
 router.post('/:id', (req, res) => {
+    
+    console.log(req.body);
+
     company.findOneAndUpdate({
         _id: req.params.id
     }, req.body, {
